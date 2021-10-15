@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "1412c04b-e0ed-4252-9df8-b560d725b9a6",
+		"name": "froxlor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Froxlor",
+			"item": [
+				{
+					"name": "listFunctions",
+					"protocolProfileBehavior": {
+						"strictSSL": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false,
+						"followRedirects": false,
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"header\": {\n        \"apikey\": \"{{apikey}}\",\n        \"secret\": \"{{secret}}\"\n       \n    },\n    \"body\": {\n        \"command\": \"Froxlor.listFunctions\",\n        \"params\":[]\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "Use variables to reuse values in different places. Work with the current value of a variable to prevent sharing sensitive values with your team. Learn more about variable values{{domain}}/api.php",
+							"host": [
+								"Use variables to reuse values in different places",
+								" Work with the current value of a variable to prevent sharing sensitive values with your team",
+								" Learn more about variable values{{domain}}"
+							],
+							"path": [
+								"api.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apikey",
+			"value": ""
+		},
+		{
+			"key": "secret",
+			"value": ""
+		},
+		{
+			"key": "domain",
+			"value": ""
+		}
+	]
+}
