@@ -33,11 +33,10 @@
 							}
 						},
 						"url": {
-							"raw": "Use variables to reuse values in different places. Work with the current value of a variable to prevent sharing sensitive values with your team. Learn more about variable values{{domain}}/api.php",
+							"raw": "https://{{domain}}/api.php",
+							"protocol": "https",
 							"host": [
-								"Use variables to reuse values in different places",
-								" Work with the current value of a variable to prevent sharing sensitive values with your team",
-								" Learn more about variable values{{domain}}"
+								"{{domain}}"
 							],
 							"path": [
 								"api.php"
